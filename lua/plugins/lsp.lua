@@ -12,7 +12,10 @@ return {
             },
           },
         },
-        ruff_lsp = {},
+        html = {
+          filetypes = { "html", "htmldjango", "django-html" },
+        },
+        djlsp = {},
       },
     },
   },
