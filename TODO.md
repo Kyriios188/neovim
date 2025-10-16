@@ -30,15 +30,13 @@
 
 - html: if I create an opening tag it creates the closing tag, but it won't autocomplete anything.
 - Does it validate? Can it even validate a django template?
+- I thing it uses 2 spaces instead of 4
 
-## Lazy git
-
-- Install it and test it out once you've sorted the complete mess above
-
-## Emulate Jetbrains
+## Misc
 
 - in visual mode, global search should search for what is being highlighted
 - show line at 120 characters
+- I broke something and now I can't select any option in the autocompletion windows, everything just adds a linebreak AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.
 
 ## Questions to understand what is happening
 

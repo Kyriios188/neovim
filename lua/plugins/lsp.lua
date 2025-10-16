@@ -15,7 +15,11 @@ return {
         html = {
           filetypes = { "html", "htmldjango", "django-html" },
         },
-        djlsp = {},
+        djlsp = {
+          init_options = {
+            django_settings_module = "C:/Users/punis/Code/lapin_webapp/core/settings",
+          },
+        },
       },
     },
   },

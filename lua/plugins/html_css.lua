@@ -1,4 +1,4 @@
--- Apparently this thing is supposed to help for css files inside html/django files.
+-- Apparently this thing is supposed to help for css markup inside django templates.
 return {
   {
     "nvim-treesitter/nvim-treesitter",

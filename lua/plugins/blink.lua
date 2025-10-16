@@ -1,4 +1,5 @@
 return {
+  -- Everything here is according to the doc in https://github.com/Jezda1337/nvim-html-css
   {
     "saghen/blink.compat",
     version = "*",
