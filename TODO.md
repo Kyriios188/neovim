@@ -13,6 +13,11 @@
 
 ## LSP stuff
 
+### Terminal
+
+- opens the shitty windows terminal instead of git bash
+- can only have one terminal, not a problem right now but will be if I try to use the masochistic piece of tech at work.
+
 ### Django templates support
 
 - No tag auto completion

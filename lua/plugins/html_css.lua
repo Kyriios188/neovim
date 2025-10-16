@@ -1,4 +1,3 @@
--- Apparently this thing is supposed to help for css markup inside django templates.
 return {
   {
     "nvim-treesitter/nvim-treesitter",
@@ -7,7 +6,6 @@ return {
         "bash",
         "html",
         "htmldjango",
-        "django-html",
         "javascript",
         "json",
         "lua",
@@ -22,32 +20,32 @@ return {
       },
     },
   },
-  {
-    "Jezda1337/nvim-html-css",
-    dependencies = { "saghen/blink.cmp", "nvim-treesitter/nvim-treesitter" },
-    opts = {
-      enable_on = {
-        "html",
-        "htmldjango",
-        "django-html",
-      },
-      handlers = {
-        definition = {
-          bind = "gd",
-        },
-        hover = {
-          bind = "K",
-          wrap = true,
-          border = "none",
-          position = "cursor",
-        },
-      },
-      documentation = {
-        auto_show = true,
-      },
-      style_sheets = {
-        "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css",
-      },
-    },
-  },
+  -- Apparently this thing is supposed to help for css markup inside django templates.
+  -- {
+  --   "Jezda1337/nvim-html-css",
+  --   dependencies = { "saghen/blink.cmp", "nvim-treesitter/nvim-treesitter" },
+  --   opts = {
+  --     enable_on = {
+  --       "html",
+  --       "htmldjango",
+  --     },
+  --     handlers = {
+  --       definition = {
+  --         bind = "gd",
+  --       },
+  --       hover = {
+  --         bind = "K",
+  --         wrap = true,
+  --         border = "none",
+  --         position = "cursor",
+  --       },
+  --     },
+  --     documentation = {
+  --       auto_show = true,
+  --     },
+  --     style_sheets = {
+  --       "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css",
+  --     },
+  --   },
+  -- },
 }

@@ -1,3 +1,4 @@
+local home = vim.fn.getcwd()
 return {
   {
     "neovim/nvim-lspconfig",
@@ -12,12 +13,53 @@ return {
             },
           },
         },
+        -- doesn't work
         html = {
           filetypes = { "html", "htmldjango", "django-html" },
         },
+        -- doesn't work either
         djlsp = {
           init_options = {
-            django_settings_module = "C:/Users/punis/Code/lapin_webapp/core/settings",
+            env_directories = {
+              home .. "\\venv",
+              "\\venv\\",
+              "\\venv\\",
+              "venv",
+              "venv\\",
+              "venv/",
+              "\\venv",
+              "\\venv\\",
+              "C:/Users/punis/Code/lapin_webapp/venv/",
+              "C:\\Users\\punis\\Code\\lapin_webapp\\venv\\",
+              "C:\\Users\\punis\\Code\\lapin_webapp\\venv",
+              "~\\Code\\lapin_webapp\\venv",
+              "~\\Code\\lapin_webapp\\venv\\",
+              "~/Code/lapin_webapp/venv",
+              "~/Code/lapin_webapp/venv/",
+            },
+            django_settings_module = "core.settings",
+          },
+          settings = {
+            djlsp = {
+              env_directories = {
+                home .. "\\venv",
+                "\\venv\\",
+                "\\venv\\",
+                "venv",
+                "venv\\",
+                "venv/",
+                "\\venv",
+                "\\venv\\",
+                "C:/Users/punis/Code/lapin_webapp/venv/",
+                "C:\\Users\\punis\\Code\\lapin_webapp\\venv\\",
+                "C:\\Users\\punis\\Code\\lapin_webapp\\venv",
+                "~\\Code\\lapin_webapp\\venv",
+                "~\\Code\\lapin_webapp\\venv\\",
+                "~/Code/lapin_webapp/venv",
+                "~/Code/lapin_webapp/venv/",
+              },
+              django_settings_module = "core.settings",
+            },
           },
         },
       },
