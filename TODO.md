@@ -13,11 +13,6 @@
 
 ## LSP stuff
 
-### Terminal
-
-- opens the shitty windows terminal instead of git bash
-- can only have one terminal, not a problem right now but will be if I try to use the masochistic piece of tech at work.
-
 ### Django templates support
 
 - No tag auto completion
@@ -35,7 +30,7 @@
 
 - html: if I create an opening tag it creates the closing tag, but it won't autocomplete anything.
 - Does it validate? Can it even validate a django template?
-- I thing it uses 2 spaces instead of 4
+- I think it uses 2 spaces instead of 4
 
 ## Misc
 

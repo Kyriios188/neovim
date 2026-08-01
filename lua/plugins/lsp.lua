@@ -13,51 +13,14 @@ return {
             },
           },
         },
-        -- doesn't work
-        html = {
-          filetypes = { "html", "htmldjango", "django-html" },
-        },
-        -- doesn't work either
         djlsp = {
           init_options = {
-            env_directories = {
-              home .. "\\venv",
-              "\\venv\\",
-              "\\venv\\",
-              "venv",
-              "venv\\",
-              "venv/",
-              "\\venv",
-              "\\venv\\",
-              "C:/Users/punis/Code/lapin_webapp/venv/",
-              "C:\\Users\\punis\\Code\\lapin_webapp\\venv\\",
-              "C:\\Users\\punis\\Code\\lapin_webapp\\venv",
-              "~\\Code\\lapin_webapp\\venv",
-              "~\\Code\\lapin_webapp\\venv\\",
-              "~/Code/lapin_webapp/venv",
-              "~/Code/lapin_webapp/venv/",
-            },
+            env_directories = { home },
             django_settings_module = "core.settings",
           },
           settings = {
             djlsp = {
-              env_directories = {
-                home .. "\\venv",
-                "\\venv\\",
-                "\\venv\\",
-                "venv",
-                "venv\\",
-                "venv/",
-                "\\venv",
-                "\\venv\\",
-                "C:/Users/punis/Code/lapin_webapp/venv/",
-                "C:\\Users\\punis\\Code\\lapin_webapp\\venv\\",
-                "C:\\Users\\punis\\Code\\lapin_webapp\\venv",
-                "~\\Code\\lapin_webapp\\venv",
-                "~\\Code\\lapin_webapp\\venv\\",
-                "~/Code/lapin_webapp/venv",
-                "~/Code/lapin_webapp/venv/",
-              },
+              env_directories = { home },
               django_settings_module = "core.settings",
             },
           },

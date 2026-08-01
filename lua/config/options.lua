@@ -9,3 +9,14 @@ vim.g.snacks_animate = false
 
 vim.opt.relativenumber = false
 vim.opt.showtabline = 0
+
+-- Use Git Bash as the integrated terminal shell instead of cmd.exe
+-- Use the 8.3 short path to avoid spaces in "Program Files"
+if vim.fn.executable("C:/PROGRA~1/Git/bin/bash.exe") == 1 then
+  vim.opt.shell = "C:/PROGRA~1/Git/bin/bash.exe"
+  vim.opt.shellcmdflag = "-c"
+  vim.opt.shellredir = "2>&1 | tee %s"
+  vim.opt.shellpipe = "2>&1 | tee %s"
+  vim.opt.shellquote = ""
+  vim.opt.shellxquote = ""
+end

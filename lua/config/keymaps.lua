@@ -5,4 +5,3 @@
 vim.keymap.set("n", "<C-y>", "<Cmd>redo<CR>", { noremap = true, silent = true })
 -- Focus the filetree window
 vim.keymap.set("n", "<leader>z", "<C-w>w", { noremap = true, silent = true })
---
