@@ -5,3 +5,7 @@
 vim.keymap.set("n", "<C-y>", "<Cmd>redo<CR>", { noremap = true, silent = true })
 -- Focus the filetree window
 vim.keymap.set("n", "<leader>z", "<C-w>w", { noremap = true, silent = true })
+-- Close the current buffer (preserves window layout)
+vim.keymap.set("n", "<C-k>", function()
+  Snacks.bufdelete()
+end, { noremap = true, silent = true, desc = "Delete Buffer" })

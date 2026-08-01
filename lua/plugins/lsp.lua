@@ -6,10 +6,13 @@ return {
     opts = {
       ---@type lspconfig.options
       servers = {
-        basedpyright = {
-          settings = {
-            basedpyright = {
-              analysis = { typeCheckingMode = "off", ignore = "*", autoImportCompletions = true },
+        pyrefly = {
+          init_options = {
+            pyrefly = {
+              -- PyCharm-like leniency: only parse errors / undefined names / high-confidence
+              -- issues. Skips unannotated defs and never infers return types, so files don't
+              -- light up over type-hint details.
+              typeCheckingMode = "basic",
             },
           },
         },
