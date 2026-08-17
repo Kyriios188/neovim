@@ -1,23 +1,11 @@
-<!--toc:start-->
-
 # Stuff to do to achieve the bare IDE minimum
-
-- [Stuff to do to achieve the bare IDE minimum](#stuff-to-do-to-achieve-the-bare-ide-minimum)
-  - [LSP stuff](#lsp-stuff)
-    - [Django templates support](#django-templates-support)
-    - [CSS](#css)
-    - [HTML](#html)
-  - [Emulate Jetbrains](#emulate-jetbrains)
-- [Questions to understand what is happening](#questions-to-understand-what-is-happening)
 <!--toc:end-->
 
 ## LSP stuff
 
-### Django templates support
+### Django templates
 
-- No tag auto completion
-- Can't go to definition of fragments
-- Does it even do anything? I had to manually register it which is a bad sign but at least it's active
+- If I write {% I expect it to write {%  %} instead
 
 ### CSS
 
@@ -28,17 +16,17 @@
 
 ### HTML
 
-- html: if I create an opening tag it creates the closing tag, but it won't autocomplete anything.
-- Does it validate? Can it even validate a django template?
+- html: if I create an opening tag it creates the closing tag but won't autocomplete anything.
+- Does it validate? Can it even validate a django template? I want to lint my django templates
 - I think it uses 2 spaces instead of 4
-
-## Misc
-
-- in visual mode, global search should search for what is being highlighted
-- show line at 120 characters
-- I broke something and now I can't select any option in the autocompletion windows, everything just adds a linebreak AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.
+- If I write a newline inside a very indented bit, the cursor does not spawn at the correct indentation level
 
 ## Questions to understand what is happening
 
 - I have LazyExtras, lazy.nvim, mason and the plugin files to install plugins. The fuck? Why are there 4 ways to install one plugin?
 - If I install without using plugin files, where is it stored? I'm assuming nvim-data shouldn't be in the repo, it contains python venv.
+
+## Misc
+
+- I need a way to show the git diff for a certain block of change
+- I need a way to revert the git diff for a certain block of change

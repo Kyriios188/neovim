@@ -1,4 +1,3 @@
-local home = vim.fn.getcwd()
 return {
   {
     "neovim/nvim-lspconfig",
@@ -13,18 +12,6 @@ return {
               -- issues. Skips unannotated defs and never infers return types, so files don't
               -- light up over type-hint details.
               typeCheckingMode = "basic",
-            },
-          },
-        },
-        djlsp = {
-          init_options = {
-            env_directories = { home },
-            django_settings_module = "core.settings",
-          },
-          settings = {
-            djlsp = {
-              env_directories = { home },
-              django_settings_module = "core.settings",
             },
           },
         },
