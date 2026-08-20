@@ -29,4 +29,4 @@
 ## Misc
 
 - I need a way to show the git diff for a certain block of change
-- I need a way to revert the git diff for a certain block of change
+i- I need a way to revert the git diff for a certain block of change
